@@ -2,7 +2,6 @@ import Ember from 'ember';
 
 var Band = Ember.Object.extend({
   name: '',
-  
   slug: Ember.computed('name', function() {
     return this.get('name').dasherize();
   }),
@@ -30,7 +29,7 @@ var daughter = Song.create({
   title: 'Daughter',
   band: 'Pearl Jam',
   rating: 5
-})
+});
 
 var pretender = Song.create({
   title: 'The Pretender',
@@ -38,25 +37,25 @@ var pretender = Song.create({
   rating: 2
 });
 
-var BandsCollection = Ember.Object.extend({
-  content: [],
-  sortProperties: ['name:desc'],
-  sortedContent: Ember.computed.sort('content', 'sortProperties'),
-})
-
 var ledZeppelin = Band.create ({
   name: 'Led Zeppelin',
   songs: [blackDog]
 });
 
-var fooFighters =  Band.Create({
+var fooFighters =  Band.create({
   name: 'Foo Fighters',
   songs: [pretender]
 });
 
 var pearlJam = Band.create({
   name: 'Pearl Jam',
-  songs: [daughter, yellowLedbeter]
+  songs: [daughter, yellowLedbetter]
+});
+
+var BandsCollection = Ember.Object.extend({
+  content: [],
+  sortProperties: ['name:desc'],
+  sortedContent: Ember.computed.sort('content', 'sortProperties'),
 });
 
 var bands = BandsCollection.create();

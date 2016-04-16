@@ -43,6 +43,7 @@ var fooFighters =  Band.create({
 
 var pearlJam = Band.create({
   name: 'Pearl Jam',
+  description: 'Pearl Jam is an American rock band, formed in Seattle, Washinton in 1990.',
   songs: [daughter, yellowLedbetter]
 });
 
@@ -67,6 +68,10 @@ export default Ember.Route.extend({
       bands.get('content').pushObject(band);
       this.get('controller').set('name', '');
       this.transitionTo('bands.band.songs', band);
+    },
+    
+    didTransition: function(){
+      document.title = 'Bands - Vinyl Track';
     }
   }
 });

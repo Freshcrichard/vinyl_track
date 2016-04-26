@@ -5,7 +5,7 @@ export default Ember.Route.extend({
     save: function(){
       var controller = this.get('controller'),
       band = controller.get('model');
-      return band.save()
+      return band.save();
     },
 
     willTransition: function(transition) {

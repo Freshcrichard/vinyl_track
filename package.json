@@ -1,7 +1,7 @@
 {
-  "name": "rarwe",
+  "name": "vinyl_track",
   "version": "0.0.0",
-  "description": "Small description for rarwe goes here",
+  "description": "Small description for vinyl_track goes here",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -29,6 +29,7 @@
     "ember-cli-htmlbars": "^1.0.1",
     "ember-cli-htmlbars-inline-precompile": "^0.3.1",
     "ember-cli-inject-live-reload": "^1.3.1",
+    "ember-cli-pretender": "0.6.0",
     "ember-cli-qunit": "^1.2.1",
     "ember-cli-release": "0.2.8",
     "ember-cli-sri": "^2.1.0",

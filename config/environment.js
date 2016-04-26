@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'rarwe',
+    modulePrefix: 'vinyl_track',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
